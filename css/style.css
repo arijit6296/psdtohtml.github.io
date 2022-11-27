@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	border:none;
+	outline:none;
+	font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    color: #669999;
+    font-size: 75px;
+    font-weight: 100;
+    padding: 100px 20px 0 0;
+    text-align: center;
+
+}
+h3{
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 60px;
+
+}
+
+h5{
+    color: #669999;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+p{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 100;
+    text-align: center;
+    padding-right: 60px;
+
+}
+pre{
+    color: #669999;
+    font-size: 16px;
+}
+.nav_style{
+background-color: #fff;
+border-shawow:0 10px 30px 0 rgba(138, 155, 165, 0.15) ;
+}
+.image-fluid{
+    margin-top:-13px;
+    height: 80px;
+}
+
+.image-fluid2{
+width: 450px;
+
+}
+
+.navbar-nav li a{
+    margin-left: 60px;
+    font-size:15px ;
+    font-weight: 400;
+    color: rgb(68, 68, 68);
+    position: relative;
+}
+
+
+.navbar-nav li a:hover {
+    background-color: #669999;
+}
+
+@media(max-width: 998px) {
+    .navbar-nav{
+        margin-top: 10px;
+        text-align: center;
+        padding-right: 50px;
+    }
+  }
+
+  .btn {
+    border: 0;
+    line-height: 2.0;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #669999;
+  border-shawdow:060606;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.btn:hover {
+    background-color: rgb(235, 95, 95);
+}
+
+.btn:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+@media(max-width: 998px) {
+    .image-fluid2{
+
+        width: 420px;
+    }
+
+    h1{
+        padding-left: 20px;
+        margin-top: -118px;
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 12px;
+        padding-bottom: 60px;
+        padding-right: 10px;
+    }
+
+    pre{
+        font-size: 8px;
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+}
+
+
+.continer {
+    background-color: #669999;
+
+}
+
+.heading {
+    font-family: 'Roboto', sans-serif;
+	font-size: 4rem;
+	font-weight: 400;
+    letter-spacing: 3px;
+	line-height: 1.5;
+	text-align: center;
+	color: #ffffff;
+    padding-top: 30px;
+    margin-right: 46px;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+    padding-left: 120px ;
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+    text-align: center;
+    width:290px;
+    Height:350px;
+	flex: 1 0 20rem;
+	margin: 1rem;
+	overflow: hidden;
+}
+
+
+.gallery-image {
+    text-align: center;
+	display: block;
+	width: 230px;
+	height: 230px;
+    border-radius: 30%;
+	object-fit: cover;
+	transition: transform 200ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.1);
+}
+
+
+@supports (display: grid) {
+
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(8rem, 0.5fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+@media(max-width: 998px) {
+    .heading {
+        font-size: 2rem;
+        margin-right: 0px;
+
+    }
+
+    .continer{
+        padding-top: 100px;
+
+    }
+
+    .gallery-item  {
+        margin-left: -35px;
+        margin-top: -37px;
+        text-align: center;
+    }
+    .gallery-image{
+
+        padding-right:9px ;
+    }
+}
+
+.circle-chart {
+    width: 250px;
+    height: 250px;
+    padding-right:40px ;
+  }
+  
+  .circle-chart__circle {
+    stroke: #00acc1;
+    stroke-width: 2;
+    stroke-linecap: square;
+    fill: none;
+    animation: circle-chart-fill 2s reverse; /* 1 */ 
+    transform: rotate(-90deg); /* 2, 3 */
+    transform-origin: center; /* 4 */
+  }
+  
+  
+  .circle-chart__circle--negative {
+    transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
+  }
+  
+  .circle-chart__background {
+    stroke: #efefef;
+    stroke-width: 2;
+    fill: none; 
+  }
+  
+  .circle-chart__info {
+    animation: circle-chart-appear 2s forwards;
+    opacity: 0;
+    transform: translateY(0.3em);
+  }
+  
+  .circle-chart__percent {
+    alignment-baseline: central;
+    text-anchor: middle;
+    font-size: 8px;
+  }
+  
+  .circle-chart__subline {
+      alignment-baseline: central;
+      text-anchor: middle;
+      font-size: 3px;
+  }
+  
+  .success-stroke {
+    stroke: #00C851;
+  }
+  
+  .warning-stroke {
+    stroke: #ffbb33;
+  }
+  
+  .danger-stroke {
+    stroke: #ff4444;
+  }
+  
+  @keyframes circle-chart-fill {
+    to { stroke-dasharray: 0 100; }
+  }
+  
+  @keyframes circle-chart-appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .skills{
+  color: #669999;
+  }
+  
+  .skills_section{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  
+  .skill-head{
+    margin: 80px 0;
+  }
+  
+  .skill-head h2{
+    font-size: 60px;
+    font-weight: 700;
+  }
+  
+  
+  .skill-head h5{
+    margin-bottom: 10px;
+  }
+  
+  .skills-area {
+    padding-left: 40px;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .single-skill {
+    width: 33%;
+    margin-bottom: 80px;
+  }
+  
+  .success-stroke {
+    stroke: #669999;
+  }
+  
+  .circle-chart__background {
+    stroke: #ede4e4;
+    stroke-width: 1;
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+  
+      .skill-head {
+          margin: 50px 0;
+      }	
+  
+      .skill-head h2 {
+          font-size: 30px;
+      }
+  
+      .skill-icon {
+          width: 50%;
+      }
+      
+      .skill-icon i {
+          font-size: 70px;
+      }
+  
+      .single-skill {
+          width: 50%;
+      }
+  
+      .circle-chart {
+          width: 130px;
+          height: 130px;
+          display: grid;
+      }
+  }
+  
